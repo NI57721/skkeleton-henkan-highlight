@@ -1,0 +1,56 @@
+*skkeleton-henkan-highlight*
+
+A Vim / Neovim plugin to highlight words during henkan in skkeleton.
+
+
+==============================================================================
+CONTENTS                                   *skkeleton-henkan-highlight-contents*
+
+INSTALLATION                                |skkeleton-henkan-highlight-install|
+PREREQUISITES                         |skkeleton-henkan-highlight-prerequisites|
+USAGE                                         |skkeleton-henkan-highlight-usage|
+  EXAMPLES                                 |skkeleton-henkan-highlight-examples|
+CONFIG                                       |skkeleton-henkan-highlight-config|
+CHANGELOG                                 |skkeleton-henkan-highlight-changelog|
+
+
+
+==============================================================================
+INSTALLATION                                *skkeleton-henkan-highlight-install*
+
+You can use your preferred plugin manager.
+
+
+==============================================================================
+PREREQUISITES                         *skkeleton-henkan-highlight-prerequisites*
+
+denops.vim
+https://github.com/vim-denops/denops.vim
+
+skkeleton
+https://github.com/vim-skk/skkeleton
+
+
+==============================================================================
+USAGE                                         *skkeleton-henkan-highlight-usage*
+
+This plugin provides a hightlight group, `SkkeletonHenkan`, which allows you
+to highlight words during henkan.
+
+EXAMPLES
+>
+    " Highlight words with underline when using a normal terminal,
+    " and with reverse when using a colour one.
+    highlight SkkeletonHenkan term=underline cterm=reverse
+<
+
+
+==============================================================================
+CHANGELOG                                 *skkeleton-henkan-highlight-changelog*
+
+1.0.0   19 Sep 2025
+        - First release
+
+==============================================================================
+ vim:tw=78:ts=4:et:ft=help:norl:
+
