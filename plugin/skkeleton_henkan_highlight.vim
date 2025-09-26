@@ -53,7 +53,7 @@ function! s:enable_highlight() abort
   let start = min([s:henkan_pos[2], col])
   let end = max([s:henkan_pos[2], col])
   if has('nvim')
-    call nvim_buf_set_extmark(0, s:namespace, line - 1, start - 1, #{
+    call nvim_buf_set_extmark(0, s:namespace, line - 1, start - 2, #{
           \   end_col: end - 1,
           \   hl_group: s:highlight_name,
           \ })
