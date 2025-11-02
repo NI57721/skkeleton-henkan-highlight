@@ -41,8 +41,10 @@ EXAMPLES
 >vim
     " Highlight words with underline when using a normal terminal,
     " and with reverse when using a colour one.
-    highlight SkkeletonHenkan term=underline cterm=reverse
-    highlight SkkeletonHenkanSelect term=underline cterm=reverse
+    highlight SkkeletonHenkan
+    \ gui=underline term=underline cterm=underline
+    highlight SkkeletonHenkanSelect
+    \ gui=underline,reverse term=underline,reverse cterm=underline,reverse
 <
 
 

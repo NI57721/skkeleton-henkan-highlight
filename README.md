@@ -17,8 +17,10 @@ This plugin uses a hightlight group, `SkkeletonHenkan` and `SkkeletonHenkanSelec
 ```vim
 " Highlight words with underline when using a normal terminal,
 " and with reverse when using a colour one.
-highlight SkkeletonHenkan gui=underline term=underline cterm=reverse
-highlight SkkeletonHenkanSelect gui=underline term=underline cterm=reverse
+highlight SkkeletonHenkan
+\ gui=underline term=underline cterm=underline
+highlight SkkeletonHenkanSelect
+\ gui=underline,reverse term=underline,reverse cterm=underline,reverse
 ```
 
 ## Licence

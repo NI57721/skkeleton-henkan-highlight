@@ -18,8 +18,10 @@
 ```vim
 " ノーマル・ターミナルでは変換中に下線を引き、
 " カラー・ターミナルでは変換中に色を反転する
-highlight SkkeletonHenkan gui=underline term=underline cterm=reverse
-highlight SkkeletonHenkanSelect gui=underline term=underline cterm=reverse
+highlight SkkeletonHenkan
+\ gui=underline term=underline cterm=underline
+highlight SkkeletonHenkanSelect
+\ gui=underline,reverse term=underline,reverse cterm=underline,reverse
 ```
 
 ## ライセンス
