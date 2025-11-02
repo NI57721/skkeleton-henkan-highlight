@@ -31,6 +31,10 @@ function! s:enable_highlight(highlight_name) abort
 
   if g:skkeleton#state.phase ==# 'henkan'
         \ || g:skkeleton#state.phase ==# 'input:okuriari'
+    if s:henkan_pos <= 0
+      return
+    endif
+
     " Use the last henkan_pos
     let start = s:henkan_pos
   else
