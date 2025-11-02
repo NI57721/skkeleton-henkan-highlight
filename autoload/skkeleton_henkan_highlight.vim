@@ -25,7 +25,7 @@ function! skkeleton_henkan_highlight#update() abort
 endfunction
 
 function! s:enable_highlight(highlight_name) abort
-  if !hlexists(a:highlight_name) || g:skkeleton#state.henkanFeed ==# ""
+  if !hlexists(a:highlight_name) || g:skkeleton#state.henkanFeed ==# ''
     return
   endif
 
