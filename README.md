@@ -11,13 +11,16 @@ You can use your preferred plugin manager.
 [skkeleton](https://github.com/vim-skk/skkeleton)
 
 ## Usage
-This plugin uses a hightlight group, `SkkeletonHenkan`, which allows you to highlight words during henkan.
+This plugin uses two hightlight groups, `SkkeletonHenkan` and `SkkeletonHenkanSelect`, which allow you to highlight words during henkan.
 
 ### Example
 ```vim
 " Highlight words with underline when using a normal terminal,
 " and with reverse when using a colour one.
-highlight SkkeletonHenkan gui=underline term=underline cterm=reverse
+highlight SkkeletonHenkan
+\ gui=underline term=underline cterm=underline
+highlight SkkeletonHenkanSelect
+\ gui=underline,reverse term=underline,reverse cterm=underline,reverse
 ```
 
 ## Licence
