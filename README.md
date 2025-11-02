@@ -11,7 +11,7 @@ You can use your preferred plugin manager.
 [skkeleton](https://github.com/vim-skk/skkeleton)
 
 ## Usage
-This plugin uses a hightlight group, `SkkeletonHenkan` and `SkkeletonHenkanSelect`, which allows you to highlight words during henkan.
+This plugin uses two hightlight groups, `SkkeletonHenkan` and `SkkeletonHenkanSelect`, which allow you to highlight words during henkan.
 
 ### Example
 ```vim
