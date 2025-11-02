@@ -55,6 +55,8 @@ function! s:enable_highlight(highlight_name) abort
   else
     if empty(prop_type_get(s:prop_type))
       call prop_type_add(s:prop_type, #{highlight: a:highlight_name})
+    else
+      call prop_type_change(s:prop_type, #{highlight: a:highlight_name})
     endif
 
     call prop_add(
