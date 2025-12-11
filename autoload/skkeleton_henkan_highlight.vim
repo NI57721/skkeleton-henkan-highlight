@@ -10,7 +10,8 @@ function! skkeleton_henkan_highlight#update() abort
     call s:disable_highlight()
   endif
 
-  if (g:skkeleton#state.phase ==# 'input' && mode() !=# 'i')
+  if mode() !=# 'i'
+        \ || g:skkeleton#state.phase ==# 'input'
         \ || g:skkeleton#state.phase !~# '^input:\|^henkan'
     call s:disable_highlight()
   else
